@@ -1,0 +1,22 @@
+.list {
+  display: flex;
+  max-width: 1024px;
+  gap: 10px;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.item {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 300px;
+  padding-right: 10px;
+}
+.delete {
+  cursor: pointer;
+  width: 70px;
+  height: 30px;
+}
