@@ -4,10 +4,12 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 
 const FeedbackSchema = Yup.object().shape({
   name: Yup.string()
+    .matches(/^[a-zA-Z\s]+$/, "Only letters are allowed")
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
   number: Yup.string()
+    .matches(/^\d+$/, "Only numbers are allowed")
     .min(3, "Too Short!")
     .max(50, "Too Long!")
     .required("Required"),
